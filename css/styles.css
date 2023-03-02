@@ -245,7 +245,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
   color: white;
 }
 
-#experience-type {
+.experience-type {
   margin: auto;
   background-color: var(--background-color-experience-type);
   color: black;
