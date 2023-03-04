@@ -442,7 +442,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
     grid-template-rows: auto; /* DEFAULT VALUE */
     grid-gap: 20px;
   }
-  .grid > *:nth-child(1) {
+  /* .grid > *:nth-child(1) {
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-column: 1;
@@ -453,7 +453,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
     grid-row: 1;
     -ms-grid-column: 3;
     grid-column: 3;
-  }
+  } */
   .grid__item {
     background-color: var(--background-color-grid-item);
     width: auto; /* Important to restore for use of grid vs inline-block */
