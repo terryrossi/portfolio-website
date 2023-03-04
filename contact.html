@@ -95,48 +95,66 @@
         </nav>
       </div>
     </header>
+    <hr />
     <main>
       <br />
       <br />
-      <div><h1>This is the Contact page</h1></div>
-      <div>
-        <form action="" method="post">
-          <label class="standard-label" for="contact-email"
-            >E-mail (required):</label
-          >
-          <input
-            type="email"
-            id="contact-email"
-            placeholder="Enter a Valid Email"
-            required
-          />
+      <section class="contact">
+        <div><h1>Got a question?</h1></div>
 
-          <label class="standard-label" for="contact-tel"
-            >Telephone (optional):</label
+        <div>
+          <ul class="question-list">
+            <li><h4>Interested in Collaboration?</h4></li>
+            <li><h4>New Web3 Project?</h4></li>
+            <li><h4>New Web2 Project?</h4></li>
+            <li><h4>You ABSOLUTLY need me in your Team?</h4></li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact-form" action="" method="post">
+            <div>
+              <label class="standard-label" for="contact-email"
+                >E-mail (required):</label
+              >
+              <input
+                type="email"
+                id="contact-email"
+                placeholder="Enter a Valid Email"
+                required
+              />
+            </div>
+            <div>
+              <label class="standard-label" for="contact-tel"
+                >Telephone (optional):</label
+              >
+              <input
+                id="contact-tel"
+                type="tel"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                placeholder="Format: nnn-nnn-nnnn"
+              />
+            </div>
+            <div>
+              <label class="standard-label" for="contact-msg"
+                >Message (max 100 char):</label
+              >
+              <textarea id="contact-msg" required maxlength="100"></textarea>
+            </div>
+            <div>
+              <input class="button" type="submit" value="Send message" />
+            </div>
+          </form>
+        </div>
+        <div class="contact">
+          <h3>Contact Me</h3>
+          <a
+            href="mailto:terryrossi1@gmail.com?cc=rossiterry@yahoo.com&subject=Test%20Envoi%20d'Email&body=Hello%20ViperDude%2C%0D%0A%0D%0AI%20would%20love%20to%20offer%20you%20%24600K%2Fyear%20for%20your%20amazing%20skills%20in%20Web%20Development.%0D%0A%0D%0APlease%20get%20back%20to%20me%20ASAP.%0D%0A%0D%0AElon%20Musk%0D%0AHiring%20Boss"
+            >Email Me Here</a
           >
-          <input
-            id="contact-tel"
-            type="tel"
-            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-            placeholder="Format: nnn-nnn-nnnn"
-          />
-
-          <label class="standard-label" for="contact-msg"
-            >Message (max 100 char):</label
-          >
-          <textarea id="contact-msg" required maxlength="100"></textarea>
-
-          <input type="submit" value="Send message" />
-        </form>
-      </div>
-      <div class="contact">
-        <h3>Contact Me</h3>
-        <a
-          href="mailto:terryrossi1@gmail.com?cc=rossiterry@yahoo.com&subject=Test%20Envoi%20d'Email&body=Hello%20ViperDude%2C%0D%0A%0D%0AI%20would%20love%20to%20offer%20you%20%24600K%2Fyear%20for%20your%20amazing%20skills%20in%20Web%20Development.%0D%0A%0D%0APlease%20get%20back%20to%20me%20ASAP.%0D%0A%0D%0AElon%20Musk%0D%0AHiring%20Boss"
-          >Email Me Here</a
-        >
-      </div>
+        </div>
+      </section>
     </main>
+    <hr />
     <footer class="page-footer">
       <h2>Find me on</h2>
       <div class="social-media">
