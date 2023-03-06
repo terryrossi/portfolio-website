@@ -188,8 +188,17 @@ hr {
 /* Make the header a Flex-box which will include 2 items */
 .page-header {
   display: flex;
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
   /* width: 100%; Useless! */
-  padding: 20px;
+  padding: 0px;
+  /* background-color: white; */
+  background-image: linear-gradient(
+    to top,
+    var(--background-color) 10%,
+    white 40%
+  );
 }
 /* Each item of the flex-box (flex-grow, flex-schrink, flex-basis) (1=yes;0=no)*/
 .page-header__item {
@@ -250,6 +259,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 50px;
 }
 .about-table {
   margin: auto;
@@ -449,6 +459,9 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
   h4 {
     font-weight: 700;
   }
+  a {
+    font-size: 16px;
+  }
   .project__image {
     float: left;
     max-width: 100px;
@@ -484,10 +497,15 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /* DISPLAY FLEX FOR THE FOOTER SECTIONS */
 .page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
+  /* clear: both; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: var(--background-color);
 }
 /* END OF FOOTER */
 
