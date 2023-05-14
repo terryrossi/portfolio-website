@@ -24,18 +24,18 @@ input[type=”text”]
 /* CSS VARIABLES */
 
 :root {
-  --background-color: rgb(247, 247, 247);
-  --background-color-grid-item: rgb(228, 244, 250);
-  --background-color-dark: rgb(58, 19, 6);
-  --background-color-about-table-th: #036c84;
-  --background-color-experience-type: #cedfe6;
-  --background-color-button: #036c84;
-  --primary-color: #357b70;
-  --secondary-color: #e93e0f;
-  --dark-grey: #2b2b2b;
-  --hover-color: #0683e8;
-  --font-size: 16px;
-  --font-weight: 400px;
+	--background-color: rgb(247, 247, 247);
+	--background-color-grid-item: rgb(228, 244, 250);
+	--background-color-dark: rgb(58, 19, 6);
+	--background-color-about-table-th: #036c84;
+	--background-color-experience-type: #cedfe6;
+	--background-color-button: #036c84;
+	--primary-color: #357b70;
+	--secondary-color: #e93e0f;
+	--dark-grey: #2b2b2b;
+	--hover-color: #0683e8;
+	--font-size: 16px;
+	--font-weight: 400px;
 }
 /* SCSS VARIABLES */
 /* $background-color: rgb(247, 247, 247);
@@ -51,120 +51,120 @@ $hover-color: #0683e8; */
 
 /* To make max box sizes include padding, borders and Margins */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color);
-  /* background-color: $background-color; */
-  /* font-family: "Roboto", sans-serif; */
-  /* font-family: "Gloock", serif; */
-  /* font-family: "Lato", sans-serif; */
-  font-family: "Playfair Display", serif;
-  font-weight: var(--font-weight);
-  font-size: var(--font-size);
+	background-color: var(--background-color);
+	/* background-color: $background-color; */
+	/* font-family: "Roboto", sans-serif; */
+	/* font-family: "Gloock", serif; */
+	/* font-family: "Lato", sans-serif; */
+	font-family: 'Playfair Display', serif;
+	font-weight: var(--font-weight);
+	font-size: var(--font-size);
 }
 div {
-  /* Adds a 10px inner spacing to all sides */
-  padding: 10px;
-  /* Adds a 10px outer spacing to all sides */
-  margin: 0px auto;
-  /* border: 1px solid black; */
-  /* Attributes describe: thickness, type, color */
+	/* Adds a 10px inner spacing to all sides */
+	padding: 10px;
+	/* Adds a 10px outer spacing to all sides */
+	margin: 0px auto;
+	/* border: 1px solid black; */
+	/* Attributes describe: thickness, type, color */
 }
 h1 {
-  font-size: 35px;
-  font-weight: 700;
-  /* font-weight: bold; */
+	font-size: 35px;
+	font-weight: 700;
+	/* font-weight: bold; */
 }
 .header__title {
-  text-align: center;
+	text-align: center;
 }
 h2 {
-  font-size: 24px;
-  font-weight: 400;
+	font-size: 24px;
+	font-weight: 400;
 }
 h3 {
-  font-size: 18px;
-  font-weight: 700;
+	font-size: 18px;
+	font-weight: 400;
 }
 h4 {
-  font-weight: 700;
+	font-weight: 400;
 }
 .bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 /* Hyperlinks */
 
 a {
-  color: var(--primary-color);
-  /* color: $primary-color; */
-  transition: color 1s;
-  font-size: 20px;
+	color: var(--primary-color);
+	/* color: $primary-color; */
+	transition: color 1s;
+	font-size: 20px;
 }
 a:visited {
-  /* visited link */
-  color: var(--secondary-color);
+	/* visited link */
+	color: var(--secondary-color);
 }
 a:hover,
 a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
-  color: var(--hover-color);
+	/* No underlining when hovering over a link */
+	text-decoration: none;
+	color: var(--hover-color);
 }
 a:active {
-  /* selected link */
-  color: var(--dark-grey);
+	/* selected link */
+	color: var(--dark-grey);
 }
 
 /* BUTTONS */
 
 button,
 .button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--background-color-button);
-  color: white;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  /* TRANSITIONS */
-  /* transition: [transition-property] [transition-duration] 
+	/* overwrites browser defaults and resets the border */
+	border: none;
+	/* takes the font from the outer container */
+	font-family: inherit;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	/* styles the background color, font color, and text decoration (underline, etc.) of the button */
+	background-color: var(--background-color-button);
+	color: white;
+	text-decoration: none;
+	/*adds spacing to the button (this will be discussed more in-depth later) */
+	padding: 10px;
+	border-radius: 3px;
+	/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	/* TRANSITIONS */
+	/* transition: [transition-property] [transition-duration] 
   [transition-timing-function] [transition-delay]; */
-  /* transition-property: opacity;
+	/* transition-property: opacity;
   transition-duration: 0.5s; */
-  transition: opacity 0.5s;
+	transition: opacity 0.5s;
 }
 button:hover,
 .button:hover,
 button:focus,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  color: white;
-  box-shadow: none;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.75;
+	/* lets the mouse appear as a hand when hovering over the button */
+	cursor: pointer;
+	color: white;
+	box-shadow: none;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.75;
 }
 
 /* CROSS LINE */
 hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.25),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.25)
-  );
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0.25),
+		rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0.25)
+	);
 }
 
 /* END OF GENERAL SETTINGS */
@@ -177,50 +177,46 @@ hr {
 
 /* Page Header Logo pictures */
 .page-header__logo--images {
-  max-width: 50px;
-  max-height: 40px;
-  display: inline;
-  background-color: white;
-  /* border: 1px solid black; */
-  margin: 10px -2px;
+	max-width: 50px;
+	max-height: 40px;
+	display: inline;
+	background-color: white;
+	/* border: 1px solid black; */
+	margin: 10px -2px;
 }
 
 /* Make the header a Flex-box which will include 2 items */
 .page-header {
-  display: flex;
-  /* position: fixed; */
-  /* top: 0px;
+	display: flex;
+	/* position: fixed; */
+	/* top: 0px;
   left: 0px; */
-  /* width: 100%; Useless! */
-  padding: 0px;
-  /* background-color: white; */
-  background-image: linear-gradient(
-    to top,
-    var(--background-color) 10%,
-    white 40%
-  );
+	/* width: 100%; Useless! */
+	padding: 0px;
+	/* background-color: white; */
+	background-image: linear-gradient(to top, var(--background-color) 10%, white 40%);
 }
 /* Each item of the flex-box (flex-grow, flex-schrink, flex-basis) (1=yes;0=no)*/
 .page-header__item {
-  flex: 0 1 200px;
+	flex: 0 1 200px;
 }
 /* Make the 2nd item (NavBar) which is also the last-child different */
 .page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
+	flex-grow: 1;
+	text-align: right;
 }
 /* Removes the points on the <li> */
 .navigation-list {
-  list-style-type: none;
+	list-style-type: none;
 }
 /* horizontal view of the header links <li> */
 .navigation-list li {
-  display: inline-block;
-  margin-right: 15px;
+	display: inline-block;
+	margin-right: 15px;
 }
 /* Removes underline of link of current page viewed */
 .navigation-list__item--active {
-  text-decoration: none;
+	text-decoration: none;
 }
 /* END OF HEADER FOR ALL PAGES */
 
@@ -230,9 +226,9 @@ hr {
 /* PROFILE PICTURE AND TEXT FOR HOME PAGE*/
 
 .profile {
-  clear: both;
-  max-width: 750px;
-  margin: 0 auto; /* Centers the element in middle of screen */
+	clear: both;
+	max-width: 850px;
+	margin: 0 auto; /* Centers the element in middle of screen */
 }
 
 /*
@@ -240,10 +236,11 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
  */
 /* FYI: IPhone SE = 320px max (keep inmind for overall design) */
 .profile-and-project__image {
-  float: left;
-  max-height: 200px;
-  margin: 1% 5% 1% 1%;
-  border-radius: 5%;
+	float: left;
+	max-height: 200px;
+	margin: 1% 5% 1% 1%;
+	border-radius: 8%;
+	/* padding: 15px rgba(172, 170, 170, 0.1); */
 }
 /* END OF HOME PAGE */
 
@@ -255,44 +252,44 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* DISPLAY FLEX FOR THE ABOUT ME PAGE */
 .about,
 .contact {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 50px;
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 50px;
 }
 .about-table {
-  margin: auto;
-  box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
-  border-radius: 5px;
+	margin: auto;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
 }
 .about-table td,
 .about-table th {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 8px;
 }
 .about-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: var(--background-color-about-table-th);
-  color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: var(--background-color-about-table-th);
+	color: white;
 }
 
 .experience-type {
-  margin: auto;
-  background-color: var(--background-color-experience-type);
-  color: black;
+	margin: auto;
+	background-color: var(--background-color-experience-type);
+	color: black;
 }
 
 /* Nested table inside about-table showing logo + Text */
 .nested-table {
-  margin: 0px;
+	margin: 0px;
 }
 .nested-table td,
 .nested-table th {
-  border: 0px;
-  padding: 2px;
+	border: 0px;
+	padding: 2px;
 }
 
 /* KEYFRAMES / ANIMATIONS */
@@ -300,24 +297,24 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /* Rotates Icon in My Experience Table */
 @keyframes icon-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .icon-my-experience {
-  animation: 5s icon-rotate infinite linear;
+	animation: 5s icon-rotate infinite linear;
 }
 .icon-my-experience__image {
-  max-width: 30px;
-  /* max-height: 40px; */
-  /* display: inline; */
-  background-color: white;
-  border-radius: 50%;
-  /* margin: 10px -2px; */
+	max-width: 30px;
+	/* max-height: 40px; */
+	/* display: inline; */
+	background-color: white;
+	border-radius: 50%;
+	/* margin: 10px -2px; */
 }
 /* END OF ABOUT PAGE */
 
@@ -328,31 +325,31 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /* Contact page Flex Display */
 .question-list {
-  padding: 5%;
-  box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
-  border-radius: 5px;
+	padding: 5%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
 
-  width: 400px;
-  margin: 0px auto;
+	width: 400px;
+	margin: 0px auto;
 }
 .question-list li {
-  /* color: red; */
-  list-style-type: none;
-  position: relative;
-  /* left: -20px; */
+	/* color: red; */
+	list-style-type: none;
+	position: relative;
+	/* left: -20px; */
 }
 .contact-form {
-  width: 400px;
-  height: 300px;
-  margin: 20px auto;
-  padding: 5%;
-  box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
-  border-radius: 5px;
+	width: 400px;
+	height: 300px;
+	margin: 20px auto;
+	padding: 5%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
 }
 .contact-form .standard-label {
-  width: 200px;
-  display: inline-block;
-  border-radius: 5px;
+	width: 200px;
+	display: inline-block;
+	border-radius: 5px;
 }
 /* END OF CONTACT PAGE */
 
@@ -365,22 +362,20 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* Support for OLDER web browser versions */
 /*  */
 .grid__item {
-  background-color: var(
-    --background-color-dark
-  ); /* Dark BG to see the difference in old browser*/
-  display: inline-block;
-  width: 50%;
+	background-color: var(--background-color-dark); /* Dark BG to see the difference in old browser*/
+	display: inline-block;
+	width: 50%;
 }
 /* CSS FOR THE PROJECTS ITEMS */
 .project__image {
-  float: left;
-  max-height: 200px;
-  margin: 10px 10px 10px 0px;
-  border-radius: 5%;
+	float: left;
+	max-height: 200px;
+	margin: 10px 10px 10px 0px;
+	border-radius: 5%;
 }
 /* LINKS INSIDE EACH PROJECT GRID */
 .project-link a {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 /* Support for NEWER web browser versions */
@@ -388,105 +383,105 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* DISPLAY FOR OVER 900px */
 
 @supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* after testing 3 and 2 columns, 1 Column seems to be a better fit for my projects */
-    grid-template-rows: auto; /* DEFAULT VALUE */
-    grid-gap: 20px;
-  }
-  .grid__item {
-    background-color: var(--background-color-grid-item);
-    width: auto; /* Important to restore for use of grid vs inline-block */
-    min-height: auto; /* Default restored */
-    margin: 0; /* Default restored */
-    border-radius: 5px;
-  }
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* after testing 3 and 2 columns, 1 Column seems to be a better fit for my projects */
+		grid-template-rows: auto; /* DEFAULT VALUE */
+		grid-gap: 20px;
+	}
+	.grid__item {
+		background-color: var(--background-color-grid-item);
+		width: auto; /* Important to restore for use of grid vs inline-block */
+		min-height: auto; /* Default restored */
+		margin: 0; /* Default restored */
+		border-radius: 5px;
+	}
 }
 
 /* DISPLAY FOR 600px to 900px */
 
 @media all and (min-width: 600px) and (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  body {
-    font-size: 14px;
-  }
-  .project-link a {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 20px;
-    font-weight: 400;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  h4 {
-    font-weight: 700;
-  }
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+	body {
+		font-size: 14px;
+	}
+	.project-link a {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	h4 {
+		font-weight: 700;
+	}
 }
 
 /* DISPLAY FOR UNDER 600px */
 
 @media all and (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  body {
-    font-size: 12px;
-  }
-  .project-link a {
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  h3 {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  h4 {
-    font-weight: 700;
-  }
-  a {
-    font-size: 16px;
-  }
-  .project__image {
-    float: left;
-    max-width: 100px;
-    min-width: 60px;
-    margin: 5px 5px 5px 0px;
-    border-radius: 5%;
-    /* border: 1px solid black; */
-  }
-  .page-header {
-    padding: 10px;
-  }
-  .page-header__logo--images {
-    max-width: 30px;
-    max-height: 20px;
-    /* display: inline; */
-    /* background-color: white; */
-    /* border: 1px solid black; */
-    /* margin: -2px; */
-  }
-  .page-header__item {
-    flex: 0 1 100px;
-  }
-  .navigation-list li {
-    margin-left: 5px;
-  }
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+	body {
+		font-size: 12px;
+	}
+	.project-link a {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	h3 {
+		font-size: 12px;
+		font-weight: 400;
+	}
+	h4 {
+		font-weight: 400;
+	}
+	a {
+		font-size: 16px;
+	}
+	.project__image {
+		float: left;
+		max-width: 100px;
+		min-width: 60px;
+		margin: 5px 5px 5px 0px;
+		border-radius: 5%;
+		/* border: 1px solid black; */
+	}
+	.page-header {
+		padding: 10px;
+	}
+	.page-header__logo--images {
+		max-width: 30px;
+		max-height: 20px;
+		/* display: inline; */
+		/* background-color: white; */
+		/* border: 1px solid black; */
+		/* margin: -2px; */
+	}
+	.page-header__item {
+		flex: 0 1 100px;
+	}
+	.navigation-list li {
+		margin-left: 5px;
+	}
 }
 /* END OF WORK PAGE */
 
@@ -497,15 +492,15 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /* DISPLAY FLEX FOR THE FOOTER SECTIONS */
 .page-footer {
-  /* clear: both; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: var(--background-color);
+	/* clear: both; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: var(--background-color);
 }
 /* END OF FOOTER */
 
