@@ -384,6 +384,10 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	border-radius: 9px;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 }
+/* Removes underline for project title */
+.grid__item a {
+	text-decoration: none;
+}
 /* LINKS INSIDE EACH PROJECT GRID */
 .project-link a {
 	font-size: 16px;
