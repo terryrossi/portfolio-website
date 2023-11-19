@@ -204,7 +204,7 @@ hr {
 }
 /* Each item of the flex-box (flex-grow, flex-schrink, flex-basis) (1=yes;0=no)*/
 .page-header__item {
-	flex: 0 1 200px;
+	flex: 0 1 400px;
 }
 /* Make the 2nd item (NavBar) which is also the last-child different */
 .page-header__item:last-child {
