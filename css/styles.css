@@ -359,6 +359,9 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	display: inline-block;
 	border-radius: 5px;
 }
+.container {
+	margin: 20px auto;
+}
 /* END OF CONTACT PAGE */
 
 /**********************************************************/
@@ -520,6 +523,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	width: 100%;
 	text-align: center;
 	background-color: var(--background-color);
+	/* margin-top: 20px; */
 }
 /* END OF FOOTER */
 
