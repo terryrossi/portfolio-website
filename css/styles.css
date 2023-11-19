@@ -34,7 +34,7 @@ input[type=”text”]
 	--secondary-color: #e93e0f;
 	--dark-grey: #2b2b2b;
 	--hover-color: #0683e8;
-	--font-size: 16px;
+	--font-size: 14px;
 	--font-weight: 400px;
 }
 /* SCSS VARIABLES */
@@ -75,7 +75,7 @@ div {
 h1 {
 	font-size: 45px;
 	font-weight: 700;
-	text-shadow: 0px 0px 5px black, 0 0 0.1em rgb(37, 37, 37), 0 0 0.2em rgb(36, 36, 36);
+	text-shadow: 0px 0px 1px black, 0 0 0.1em rgb(37, 37, 37), 0 0 0.1em rgb(36, 36, 36);
 	color: white;
 	/* font-weight: bold; */
 }
@@ -380,7 +380,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 .project__image {
 	float: left;
 	max-height: 200px;
-	margin: 10px 10px 10px 0px;
+	margin: 10px 15px 10px 0px;
 	border-radius: 9px;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 }
@@ -390,7 +390,11 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 }
 /* LINKS INSIDE EACH PROJECT GRID */
 .project-link a {
-	font-size: 16px;
+	font-size: 14px;
+}
+.work-list {
+	margin-left: -10px;
+	/* padding-left: 10px; */
 }
 
 /* Support for NEWER web browser versions */
