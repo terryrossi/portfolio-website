@@ -204,7 +204,7 @@ hr {
 }
 /* Each item of the flex-box (flex-grow, flex-schrink, flex-basis) (1=yes;0=no)*/
 .page-header__item {
-	flex: 0 1 400px;
+	/* flex: 0 1 600px; */
 }
 /* Make the 2nd item (NavBar) which is also the last-child different */
 .page-header__item:last-child {
@@ -218,7 +218,7 @@ hr {
 /* horizontal view of the header links <li> */
 .navigation-list li {
 	display: inline-block;
-	margin-right: 15px;
+	margin-right: 20px;
 }
 /* Removes underline of link of current page viewed */
 .navigation-list__item--active {
@@ -421,8 +421,8 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 }
 
 /* DISPLAY FOR 600px to 900px */
-
-@media all and (min-width: 600px) and (max-width: 900px) {
+/*  */
+@media all and (min-width: 725px) and (max-width: 900px) {
 	.grid {
 		grid-template-columns: 1fr;
 		grid-gap: 10px;
@@ -447,11 +447,14 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	h4 {
 		font-weight: 700;
 	}
+	a {
+		font-size: 15px;
+	}
 }
 
 /* DISPLAY FOR UNDER 600px */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 725px) {
 	.grid {
 		grid-template-columns: 1fr;
 		grid-gap: 10px;
@@ -477,7 +480,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 		font-weight: 400;
 	}
 	a {
-		font-size: 16px;
+		font-size: 10px;
 	}
 	.project__image {
 		float: left;
@@ -497,6 +500,19 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 		/* background-color: white; */
 		/* border: 1px solid black; */
 		/* margin: -2px; */
+	}
+	.page-header__item {
+		/* flex: 0 1 100px; */
+	}
+	.navigation-list li {
+		margin-left: 5px;
+	}
+}
+@media all and (max-width: 600px) {
+	a {
+		font-size: 10px;
+		margin: 0 px;
+		padding: 0 px;
 	}
 	.page-header__item {
 		flex: 0 1 100px;
