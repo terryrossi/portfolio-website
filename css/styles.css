@@ -24,7 +24,7 @@ input[type=”text”]
 /* CSS VARIABLES */
 
 :root {
-	--background-color: rgb(247, 247, 247);
+	--background-color: rgb(250, 250, 250);
 	--background-color-grid-item: rgb(228, 244, 250);
 	--background-color-dark: rgb(58, 19, 6);
 	--background-color-about-table-th: #036c84;
@@ -66,32 +66,39 @@ body {
 }
 div {
 	/* Adds a 10px inner spacing to all sides */
-	padding: 10px;
+	padding: 0px;
 	/* Adds a 10px outer spacing to all sides */
-	margin: 0px auto;
+	/* margin: 10px auto; */
+	margin: 10px;
 	/* border: 1px solid black; */
 	/* Attributes describe: thickness, type, color */
 }
 h1 {
 	font-size: 45px;
 	font-weight: 700;
-	text-shadow: 0px 0px 1px black, 0 0 0.1em rgb(37, 37, 37), 0 0 0.1em rgb(36, 36, 36);
-	color: white;
+	/* text-shadow: 0px 0px 1px black, 0 0 0.1em rgb(37, 37, 37), 0 0 0.1em rgb(36, 36, 36); */
+	/* color: white; */
 	/* font-weight: bold; */
 }
 .header__title {
 	text-align: center;
 }
 h2 {
-	font-size: 24px;
-	font-weight: 400;
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 0px;
 }
 h3 {
 	font-size: 18px;
 	font-weight: 400;
+	margin: 0px auto;
+	text-align: justify;
 }
 h4 {
+	font-size: 14px;
 	font-weight: 400;
+	margin: 0px auto;
+	text-align: justify;
 }
 .bold {
 	font-weight: 700;
@@ -173,6 +180,10 @@ hr {
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 }
 
+.center {
+	text-align: center;
+}
+
 /* END OF GENERAL SETTINGS */
 
 /**********************************************************/
@@ -203,9 +214,9 @@ hr {
 	background-image: linear-gradient(to top, var(--background-color) 10%, white 40%);
 }
 /* Each item of the flex-box (flex-grow, flex-schrink, flex-basis) (1=yes;0=no)*/
-.page-header__item {
-	/* flex: 0 1 600px; */
-}
+/* .page-header__item {
+	flex: 0 1 600px;
+} */
 /* Make the 2nd item (NavBar) which is also the last-child different */
 .page-header__item:last-child {
 	flex-grow: 1;
@@ -233,21 +244,51 @@ hr {
 
 .profile {
 	clear: both;
-	max-width: 850px;
-	margin: 0 auto; /* Centers the element in middle of screen */
+	margin: 0 auto; /* Centers the container */
+	display: flex; /* Enables Flexbox */
+	flex-direction: column; /* Stacks children vertically */
+	justify-content: center; /* Centers items along the main axis (vertically in this case) */
+	align-items: center; /* Centers items along the cross axis (horizontally in this case) */
+	text-align: center; /* Centers text inside each child element */
+}
+
+.summary {
+	max-width: 90%;
+	/* width: 500px; */
+	/* margin: 20px auto; */
+	padding: 2% 5% 5% 5%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
+}
+
+.profile h1,
+.profile div {
+	margin-top: 0px;
+}
+.profile-summary {
+	max-width: 90%;
+}
+.link-github {
+	text-align: center;
 }
 
 /*
 USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT 
  */
 /* FYI: IPhone SE = 320px max (keep inmind for overall design) */
-.profile-and-project__image {
-	float: left;
+
+.profile__image {
+	/* float: left; */
 	max-height: 200px;
-	margin: 1% 5% 1% 1%;
-	border-radius: 8%;
-	/* padding: 15px rgba(172, 170, 170, 0.1); */
+	/* margin: 1% 5% 5% 1%; */
+	margin: auto;
+	text-align: center;
+	/* border-radius: 8%; */
+	/* box-shadow: 1px 1px 10px 0px rgb(41, 39, 39); */
+
+	padding: 15px rgba(172, 170, 170, 0.1);
 }
+
 /* END OF HOME PAGE */
 
 /**********************************************************/
@@ -255,17 +296,28 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* ABOUT PAGE */
 /* ABOUT PAGE */
 
+.experience {
+	max-width: 50%;
+	/* width: 500px; */
+	/* margin: 20px auto; */
+	padding: 0% 5% 5% 5%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
+}
+
 /* DISPLAY FLEX FOR THE ABOUT ME PAGE */
-.about,
-.contact {
+.about {
 	clear: both;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: flex-start;
 	text-align: center;
 	padding-bottom: 50px;
 }
 .about-table {
-	margin: auto;
+	margin: 10px 15px;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 	border-radius: 5px;
 }
@@ -281,6 +333,10 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	background-color: var(--background-color-about-table-th);
 	color: white;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+}
+
+.interest-table tr {
+	height: 55px;
 }
 
 .experience-type {
@@ -331,13 +387,24 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* CONTACT PAGE */
 /* CONTACT PAGE */
 
+.contact {
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
 /* Contact page Flex Display */
 .question-list {
 	padding: 5%;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 	border-radius: 5px;
 
-	width: 400px;
+	width: 600px;
 	margin: 0px auto;
 }
 .question-list li {
@@ -347,8 +414,9 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	/* left: -20px; */
 }
 .contact-form {
-	width: 400px;
-	height: 300px;
+	/* width: 400px; */
+	/* height: 300px; */
+	width: 500px;
 	margin: 20px auto;
 	padding: 5%;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
@@ -372,19 +440,33 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /*  */
 /* Support for OLDER web browser versions */
 /*  */
+
+.my-work {
+	max-width: 98%;
+	/* width: 500px; */
+	margin: 10px auto;
+	padding: 1%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
+}
+
 .grid__item {
 	background-color: var(--background-color-dark); /* Dark BG to see the difference in old browser*/
 	display: inline-block;
 	width: 50%;
-	border-radius: 9px;
+	/* border-radius: 9px; */
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	margin: 15px;
+	padding: 10px;
 }
 /* CSS FOR THE PROJECTS ITEMS */
 .project__image {
 	float: left;
-	max-height: 200px;
+	max-height: 300px;
+	max-width: 300px;
 	margin: 10px 15px 10px 0px;
-	border-radius: 9px;
+	/* border-radius: 9px; */
+	/* margin: 10px; */
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 }
 /* Removes underline for project title */
@@ -402,7 +484,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /* Support for NEWER web browser versions */
 
-/* DISPLAY FOR OVER 900px */
+/* DISPLAY FOR OVER 1200px */
 
 @supports (display: grid) {
 	.grid {
@@ -410,18 +492,35 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 		grid-template-columns: 1fr 1fr; /* after testing 3 and 2 columns, 1 Column seems to be a better fit for my projects */
 		grid-template-rows: auto; /* DEFAULT VALUE */
 		grid-gap: 20px;
+		margin: 20px;
 	}
 	.grid__item {
 		background-color: var(--background-color-grid-item);
 		width: auto; /* Important to restore for use of grid vs inline-block */
 		min-height: auto; /* Default restored */
 		margin: 0; /* Default restored */
-		border-radius: 5px;
+		/* border-radius: 5px; */
 	}
 }
 
-/* DISPLAY FOR 600px to 900px */
+/* DISPLAY FOR 600px to 1200px */
 /*  */
+
+@media all and (min-width: 1100px) and (max-width: 1200px) {
+	.project__image {
+		float: left;
+		max-width: 250px;
+		/* border: 1px solid black; */
+	}
+}
+
+@media all and (min-width: 900px) and (max-width: 1100px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+	}
+}
+
 @media all and (min-width: 725px) and (max-width: 900px) {
 	.grid {
 		grid-template-columns: 1fr;
@@ -434,7 +533,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 		font-size: 14px;
 	}
 	h1 {
-		font-size: 24px;
+		font-size: 35px;
 	}
 	h2 {
 		font-size: 20px;
@@ -484,7 +583,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	}
 	.project__image {
 		float: left;
-		max-width: 100px;
+		max-width: 200px;
 		min-width: 60px;
 		margin: 5px 5px 5px 0px;
 		border-radius: 5%;
@@ -501,14 +600,22 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 		/* border: 1px solid black; */
 		/* margin: -2px; */
 	}
-	.page-header__item {
-		/* flex: 0 1 100px; */
-	}
+	/* .page-header__item { */
+	/* flex: 0 1 100px; */
+	/* } */
 	.navigation-list li {
 		margin-left: 5px;
 	}
 }
 @media all and (max-width: 600px) {
+	.project__image {
+		float: left;
+		max-width: 100px;
+		min-width: 60px;
+		margin: 5px 5px 5px 0px;
+		border-radius: 5%;
+		/* border: 1px solid black; */
+	}
 	a {
 		font-size: 10px;
 		margin: 0 px;
@@ -522,6 +629,21 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	}
 }
 /* END OF WORK PAGE */
+
+/**********************************************************/
+
+/* FLOWCHARTS PAGE*/
+
+.flowcharts {
+	max-width: 98%;
+	/* width: 500px; */
+	margin: 10px auto;
+	padding: 1%;
+	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
+	border-radius: 5px;
+}
+
+/* END OF FLOWCHARTS */
 
 /**********************************************************/
 
@@ -540,6 +662,16 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	text-align: center;
 	background-color: var(--background-color);
 	/* margin-top: 20px; */
+}
+
+.footer-picture {
+	max-width: 20px;
+	max-height: 20px;
+	border-radius: 10%;
+	/* display: inline; */
+	/* background-color: white; */
+	/* border: 1px solid black; */
+	/* margin: 10px -2px; */
 }
 /* END OF FOOTER */
 
