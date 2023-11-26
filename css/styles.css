@@ -256,7 +256,7 @@ hr {
 	max-width: 90%;
 	/* width: 500px; */
 	/* margin: 20px auto; */
-	padding: 2% 5% 5% 5%;
+	padding: 2% 5% 2% 5%;
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 	border-radius: 5px;
 }
@@ -264,7 +264,13 @@ hr {
 .profile h1,
 .profile div {
 	margin-top: 0px;
+	margin-bottom: 5px;
 }
+
+.profile h2 {
+	font-size: 20px;
+}
+
 .profile-summary {
 	max-width: 90%;
 }
@@ -281,7 +287,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	/* float: left; */
 	max-height: 200px;
 	/* margin: 1% 5% 5% 1%; */
-	margin: auto;
+	margin: 1px;
 	text-align: center;
 	/* border-radius: 8%; */
 	/* box-shadow: 1px 1px 10px 0px rgb(41, 39, 39); */
@@ -289,6 +295,9 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	padding: 15px rgba(172, 170, 170, 0.1);
 }
 
+.image-title {
+	margin-top: 2px;
+}
 /* END OF HOME PAGE */
 
 /**********************************************************/
@@ -314,7 +323,7 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	align-content: center;
 	align-items: flex-start;
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
 .about-table {
 	margin: 10px 15px;
@@ -665,8 +674,8 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 }
 
 .footer-picture {
-	max-width: 20px;
-	max-height: 20px;
+	max-width: 40px;
+	max-height: 40px;
 	border-radius: 10%;
 	/* display: inline; */
 	/* background-color: white; */
