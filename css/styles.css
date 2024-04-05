@@ -284,19 +284,12 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 /* FYI: IPhone SE = 320px max (keep inmind for overall design) */
 
 .profile__image {
-	/* float: left; */
-	max-height: 200px;
-	/* margin: 1% 5% 5% 1%; */
-	margin: 1px;
+	max-height: 180px;
 	text-align: center;
-	/* border-radius: 8%; */
-	/* box-shadow: 1px 1px 10px 0px rgb(41, 39, 39); */
-
-	padding: 15px rgba(172, 170, 170, 0.1);
 }
 
 .image-title {
-	margin-top: 2px;
+	margin-top: 10px;
 }
 /* END OF HOME PAGE */
 
