@@ -241,12 +241,14 @@ hr {
 USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT 
  */
 /* FYI: IPhone SE = 320px max (keep inmind for overall design) */
-.profile-and-project__image {
-	float: left;
-	max-height: 200px;
-	margin: 1% 5% 1% 1%;
-	border-radius: 8%;
-	/* padding: 15px rgba(172, 170, 170, 0.1); */
+
+.profile__image {
+	max-height: 180px;
+	text-align: center;
+}
+
+.image-title {
+	margin-top: 10px;
 }
 /* END OF HOME PAGE */
 
