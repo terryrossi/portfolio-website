@@ -47,7 +47,6 @@ $hover-color: #0683e8; */
 /**********************************************************/
 
 /* GENERAL SETTINGS */
-/* GENERAL SETTINGS */
 
 /* To make max box sizes include padding, borders and Margins */
 * {
@@ -237,7 +236,8 @@ hr {
 }
 /* END OF HEADER FOR ALL PAGES */
 
-/* HOME PAGE */
+/**********************************************************/
+
 /* HOME PAGE */
 
 /* PROFILE PICTURE AND TEXT FOR HOME PAGE*/
@@ -295,7 +295,6 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /**********************************************************/
 
-/* ABOUT PAGE */
 /* ABOUT PAGE */
 
 .experience {
@@ -358,7 +357,6 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 }
 
 /* KEYFRAMES / ANIMATIONS */
-/* KEYFRAMES / ANIMATIONS */
 
 /* Rotates Icon in My Experience Table */
 @keyframes icon-rotate {
@@ -386,7 +384,18 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /**********************************************************/
 
-/* CONTACT PAGE */
+/* RESUME PAGE */
+
+.resume-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+/* END OF RESUME PAGE */
+
+/**********************************************************/
+
 /* CONTACT PAGE */
 
 .contact {
@@ -436,7 +445,6 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /**********************************************************/
 
-/* WORK PAGE*/
 /* WORK PAGE*/
 
 /*  */
@@ -649,7 +657,6 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 
 /**********************************************************/
 
-/* FOOTER */
 /* FOOTER */
 
 /* DISPLAY FLEX FOR THE FOOTER SECTIONS */
