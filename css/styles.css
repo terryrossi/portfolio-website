@@ -380,6 +380,20 @@ USE OF FLOAT DISPLAY FOR THE PROFILE PICTURE AND MAIN TEXT
 	box-shadow: 1px 1px 10px 0px rgb(41, 39, 39);
 	/* margin: 10px -2px; */
 }
+
+@media all and (max-width: 600px) {
+	.about {
+		flex-direction: column;
+		align-items: center;
+	}
+	.experience {
+		max-width: 90%;
+	}
+	.about-table {
+		max-width: 90%;
+	}
+}
+
 /* END OF ABOUT PAGE */
 
 /**********************************************************/
